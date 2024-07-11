@@ -9,8 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        HStack(spacing: 25) {
-            VStack(spacing: 25) {
+        HStack(spacing: 10) {
+            VStack(spacing: 15) {
                 Text("Christian")
                     .padding()
                     .background(Color.yellow, in: RoundedRectangle(cornerRadius: 8.0))
@@ -24,19 +24,24 @@ struct ContentView: View {
                         color: .blue,
                         radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
             }
-            HStack {
-                Text("Husband")
-                    .padding()
-                    .background(Color.purple, in: RoundedRectangle(cornerRadius: 80.0))
-                    .shadow(
-                        color: .yellow,
-                        radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
-                Text("Curious")
-                    .padding()
-                    .background(Color.orange, in: RoundedRectangle(cornerRadius: 18.0))
-                    .shadow(
-                        color: .yellow,
-                        radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+            VStack {
+                HStack {
+                    Text("Husband")
+                        .padding()
+                        .background(Color.purple, in: RoundedRectangle(cornerRadius: 80.0))
+                        .shadow(
+                            color: .yellow,
+                            radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                    Text("Curious")
+                        .padding()
+                        .background(Color.orange, in: RoundedRectangle(cornerRadius: 18.0))
+                        .shadow(
+                            color: .yellow,
+                            radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                }
+                Image(systemName: "person.fill")
+                    .imageScale(.large)
+                    .foregroundStyle(.tint)
             }
             VStack {
             Text("Believer")
